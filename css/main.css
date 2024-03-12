@@ -1,0 +1,201 @@
+/* ---------- INIT */
+
+@import url('_init/webfonts.css');
+@import url('_init/variables.css');
+
+
+/* ---------- BALISES HTML COMMUNES */
+
+@import url('_commun/structure.css');
+
+
+/* ---------- PAGES - structure */
+
+
+html, body {
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+    --scroll-behavior: smooth;
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-size: 2rem;
+    font-family: 'Oswald', sans-serif;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-family: 'Oswald', sans-serif;
+    margin: 5% 0;
+}
+
+main {
+    margin-bottom: 30%;
+}
+
+article {
+    width: 80%;
+    margin: 0 auto;
+}
+
+figure {
+    margin-top: 20%;
+}
+
+figure img {
+    border-radius: 5%;
+}
+
+p {
+    margin: 5% 0;
+}
+
+#linkedin {
+    width: 5%;
+    height: 5%;
+}
+
+/* ---------------- SPANS ------ */
+
+.etiquette {
+    display: flex;
+    justify-content: space-around;
+    padding: 2% 0;
+}
+
+.code, .levelDesign, .writing, .interview {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1em;
+    text-align: center;
+    color: #fff;
+    line-height: normal;
+    display: inline-block;
+    padding : 0.4rem;
+    border-radius: 50% 10%;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 10px 0px;
+}
+
+.code {
+    background: #750000;
+}
+
+.levelDesign {
+    background: #008EC2;
+}
+
+.writing {
+    background: #007A0C;
+}
+
+.interview {
+    background: #712375;
+}
+
+/* ---------------- FOOTER ------ */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+    padding: 4% 0;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer li {
+    width: 10%;
+    display: flex;
+    align-items: center;
+}
+
+footer a {
+    display: flex;
+    align-items: center;
+}
+
+footer img {
+    width: 100%;
+    height: 100%;
+}
+
+/* ---------------- IMAGES ------ */
+
+li a img {
+    border-radius: 50%;
+}
+
+/* ---------------- MEDIA QUERY ------ */
+
+@media screen and (min-width: 64rem) {
+    main {
+        text-align: center;
+        margin: 0 10% 20% 10%;
+    }
+
+    figure {
+        margin-top: 10%;
+    }
+
+    footer {
+        padding: 1% 0;
+    }
+
+    footer img {
+        width: 40%;
+        height: 40%;
+    }
+
+    p {
+        margin: 4% 20%;
+        text-align: left;
+    }
+
+    figure img {
+        height: 50vh;
+    }
+
+    .etiquette {
+        margin: 0 20%;
+    }
+}
+
+@media screen and (min-width: 80rem) {
+
+    main {
+        text-align: center;
+        margin: 0 10% 20% 10%;
+    }
+
+    figure {
+        margin-top: 10%;
+    }
+
+    footer {
+        padding: 1% 0;
+    }
+
+    footer img {
+        width: 40%;
+        height: 40%;
+    }
+
+    p {
+        margin: 4% 20%;
+        text-align: left;
+    }
+
+    figure img {
+        height: 50vh;
+    }
+
+    .etiquette {
+        margin: 0 20%;
+    }
+}
